@@ -1864,7 +1864,7 @@ W = angled&lt;p&gt;
 <junction x="63.5" y="22.86"/>
 </segment>
 </net>
-<net name="N$11" class="0">
+<net name="VCC" class="0">
 <segment>
 <pinref part="U4" gate="A" pin="VCC"/>
 <wire x1="180.34" y1="-15.24" x2="198.12" y2="-15.24" width="0.1524" layer="91"/>
