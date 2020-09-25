@@ -1563,6 +1563,8 @@ W = angled&lt;p&gt;
 <sheets>
 <sheet>
 <plain>
+<text x="137.16" y="7.62" size="1.778" layer="91">IC PoE CNTRL 1 Channel</text>
+<text x="-5.08" y="7.62" size="1.778" layer="91">IC REG BUCK</text>
 </plain>
 <instances>
 <instance part="C1" gate="G$1" x="-55.88" y="-2.54" smashed="yes">
