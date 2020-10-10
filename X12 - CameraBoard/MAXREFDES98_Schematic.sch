@@ -6041,7 +6041,7 @@ Also note, the SNAP packages are for using a snappable style connector. We sell 
 <attribute name="DRAWING_NAME" x="203.2" y="-125.73" size="2.54" layer="94"/>
 </instance>
 <instance part="CONN" gate="G$1" x="-76.2" y="-76.2" smashed="yes">
-<attribute name="NAME" x="-69.469" y="-82.804" size="1.778" layer="95" rot="R270"/>
+<attribute name="NAME" x="-77.851" y="-84.836" size="1.778" layer="95" rot="R90"/>
 </instance>
 <instance part="U$2" gate="G$1" x="20.32" y="-119.38" smashed="yes"/>
 <instance part="R7" gate="G$1" x="271.78" y="0" smashed="yes">
@@ -6398,7 +6398,7 @@ Also note, the SNAP packages are for using a snappable style connector. We sell 
 <label x="96.52" y="-2.54" size="1.778" layer="95" rot="R180"/>
 </segment>
 </net>
-<net name="N$4" class="0">
+<net name="CLS" class="0">
 <segment>
 <pinref part="R1" gate="G$1" pin="2"/>
 <pinref part="U3" gate="G$1" pin="CLS"/>
