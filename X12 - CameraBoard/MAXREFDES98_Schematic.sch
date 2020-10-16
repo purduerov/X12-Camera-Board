@@ -6376,16 +6376,6 @@ Also note, the SNAP packages are for using a snappable style connector. We sell 
 <wire x1="96.52" y1="10.16" x2="96.52" y2="7.62" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="CONN" gate="G$1" pin="7"/>
-<wire x1="-58.42" y1="-73.66" x2="-58.42" y2="-68.58" width="0.1524" layer="91"/>
-<label x="-58.42" y="-68.58" size="1.778" layer="95" rot="R90"/>
-</segment>
-<segment>
-<pinref part="CONN" gate="G$1" pin="8"/>
-<wire x1="-55.88" y1="-73.66" x2="-55.88" y2="-68.58" width="0.1524" layer="91"/>
-<label x="-55.88" y="-68.58" size="1.778" layer="95" rot="R90"/>
-</segment>
-<segment>
 <pinref part="U$2" gate="G$1" pin="GND_0"/>
 <wire x1="15.24" y1="-83.82" x2="10.16" y2="-83.82" width="0.1524" layer="91"/>
 <label x="5.08" y="-83.82" size="1.778" layer="95"/>
@@ -6413,11 +6403,16 @@ Also note, the SNAP packages are for using a snappable style connector. We sell 
 <wire x1="15.24" y1="-81.28" x2="10.16" y2="-81.28" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="RXD" class="0">
+<net name="RD+" class="0">
 <segment>
 <wire x1="-63.5" y1="-73.66" x2="-63.5" y2="-68.58" width="0.1524" layer="91"/>
 <pinref part="CONN" gate="G$1" pin="5"/>
 <label x="-63.5" y="-68.58" size="1.778" layer="95" rot="R90"/>
+</segment>
+<segment>
+<wire x1="15.24" y1="-104.14" x2="10.16" y2="-104.14" width="0.1524" layer="91"/>
+<pinref part="U$2" gate="G$1" pin="RD+"/>
+<label x="10.16" y="-101.6" size="1.778" layer="95" rot="R180"/>
 </segment>
 </net>
 <net name="RECT1_IN_MINUS" class="0">
@@ -6427,9 +6422,9 @@ Also note, the SNAP packages are for using a snappable style connector. We sell 
 <label x="-114.3" y="-33.02" size="1.778" layer="95" rot="R90"/>
 </segment>
 <segment>
-<wire x1="-73.66" y1="-73.66" x2="-73.66" y2="-68.58" width="0.1524" layer="91"/>
-<pinref part="CONN" gate="G$1" pin="1"/>
-<label x="-73.66" y="-68.58" size="1.778" layer="95" rot="R90"/>
+<pinref part="CONN" gate="G$1" pin="2"/>
+<wire x1="-71.12" y1="-73.66" x2="-71.12" y2="-68.58" width="0.1524" layer="91"/>
+<label x="-71.12" y="-68.58" size="1.778" layer="95" rot="R90"/>
 </segment>
 </net>
 <net name="RECT1_IN_PLUS" class="0">
@@ -6439,9 +6434,9 @@ Also note, the SNAP packages are for using a snappable style connector. We sell 
 <label x="-109.22" y="-33.02" size="1.778" layer="95" rot="R90"/>
 </segment>
 <segment>
-<wire x1="-71.12" y1="-73.66" x2="-71.12" y2="-68.58" width="0.1524" layer="91"/>
-<pinref part="CONN" gate="G$1" pin="2"/>
-<label x="-71.12" y="-68.58" size="1.778" layer="95" rot="R90"/>
+<pinref part="CONN" gate="G$1" pin="1"/>
+<wire x1="-73.66" y1="-73.66" x2="-73.66" y2="-68.58" width="0.1524" layer="91"/>
+<label x="-73.66" y="-68.58" size="1.778" layer="95" rot="R90"/>
 </segment>
 </net>
 <net name="RECT2_IN_MINUS" class="0">
@@ -6451,8 +6446,8 @@ Also note, the SNAP packages are for using a snappable style connector. We sell 
 <label x="-99.06" y="-33.02" size="1.778" layer="95" rot="R90"/>
 </segment>
 <segment>
-<wire x1="-68.58" y1="-73.66" x2="-68.58" y2="-68.58" width="0.1524" layer="91"/>
 <pinref part="CONN" gate="G$1" pin="3"/>
+<wire x1="-68.58" y1="-73.66" x2="-68.58" y2="-68.58" width="0.1524" layer="91"/>
 <label x="-68.58" y="-68.58" size="1.778" layer="95" rot="R90"/>
 </segment>
 </net>
@@ -6463,16 +6458,21 @@ Also note, the SNAP packages are for using a snappable style connector. We sell 
 <label x="-93.98" y="-33.02" size="1.778" layer="95" rot="R90"/>
 </segment>
 <segment>
-<wire x1="-66.04" y1="-73.66" x2="-66.04" y2="-68.58" width="0.1524" layer="91"/>
 <pinref part="CONN" gate="G$1" pin="4"/>
+<wire x1="-66.04" y1="-73.66" x2="-66.04" y2="-68.58" width="0.1524" layer="91"/>
 <label x="-66.04" y="-68.58" size="1.778" layer="95" rot="R90"/>
 </segment>
 </net>
-<net name="TXD" class="0">
+<net name="RD-" class="0">
 <segment>
 <pinref part="CONN" gate="G$1" pin="6"/>
 <wire x1="-60.96" y1="-73.66" x2="-60.96" y2="-68.58" width="0.1524" layer="91"/>
 <label x="-60.96" y="-68.58" size="1.778" layer="95" rot="R90"/>
+</segment>
+<segment>
+<wire x1="15.24" y1="-101.6" x2="10.16" y2="-101.6" width="0.1524" layer="91"/>
+<pinref part="U$2" gate="G$1" pin="RD-"/>
+<label x="10.16" y="-99.06" size="1.778" layer="95" rot="R180"/>
 </segment>
 </net>
 <net name="IND_2_OUT" class="0">
@@ -6491,6 +6491,30 @@ Also note, the SNAP packages are for using a snappable style connector. We sell 
 <junction x="254" y="0"/>
 <label x="266.7" y="2.54" size="1.778" layer="95" rot="R180"/>
 <pinref part="R7" gate="G$1" pin="1"/>
+</segment>
+</net>
+<net name="TD+" class="0">
+<segment>
+<pinref part="CONN" gate="G$1" pin="7"/>
+<wire x1="-58.42" y1="-73.66" x2="-58.42" y2="-68.58" width="0.1524" layer="91"/>
+<label x="-58.42" y="-68.58" size="1.778" layer="95" rot="R90"/>
+</segment>
+<segment>
+<wire x1="15.24" y1="-109.22" x2="10.16" y2="-109.22" width="0.1524" layer="91"/>
+<pinref part="U$2" gate="G$1" pin="TD+"/>
+<label x="10.16" y="-106.68" size="1.778" layer="95" rot="R180"/>
+</segment>
+</net>
+<net name="TD-" class="0">
+<segment>
+<pinref part="CONN" gate="G$1" pin="8"/>
+<wire x1="-55.88" y1="-73.66" x2="-55.88" y2="-68.58" width="0.1524" layer="91"/>
+<label x="-55.88" y="-68.58" size="1.778" layer="95" rot="R90"/>
+</segment>
+<segment>
+<wire x1="15.24" y1="-106.68" x2="10.16" y2="-106.68" width="0.1524" layer="91"/>
+<pinref part="U$2" gate="G$1" pin="TD-"/>
+<label x="10.16" y="-104.14" size="1.778" layer="95" rot="R180"/>
 </segment>
 </net>
 </nets>
