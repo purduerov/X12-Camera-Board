@@ -5125,6 +5125,29 @@ Allows current flow in one direction, but allows reverse flow when above breakdo
 <pad name="5V" x="11.1408" y="1.27" drill="1.016" diameter="1.778"/>
 <pad name="RXD" x="11.1408" y="24.13" drill="1.016" diameter="1.778"/>
 </package>
+<package name="L4978D013TR">
+<wire x1="-3.8" y1="-5.25" x2="3.8" y2="-5.25" width="0.127" layer="21"/>
+<wire x1="-3.8" y1="5.25" x2="3.8" y2="5.25" width="0.127" layer="21"/>
+<wire x1="-3.8" y1="-5.25" x2="-3.8" y2="5.25" width="0.127" layer="21"/>
+<wire x1="3.8" y1="-5.25" x2="3.8" y2="5.25" width="0.127" layer="21"/>
+<smd name="2" x="-4.5625" y="3.175" dx="1.525" dy="0.51" layer="1"/>
+<smd name="3" x="-4.5625" y="1.905" dx="1.525" dy="0.51" layer="1"/>
+<smd name="4" x="-4.5625" y="0.635" dx="1.525" dy="0.51" layer="1"/>
+<smd name="5" x="-4.5625" y="-0.635" dx="1.525" dy="0.51" layer="1"/>
+<smd name="6" x="-4.5625" y="-1.905" dx="1.525" dy="0.51" layer="1"/>
+<smd name="7" x="-4.5625" y="-3.175" dx="1.525" dy="0.51" layer="1"/>
+<smd name="1" x="-4.5625" y="4.445" dx="1.525" dy="0.51" layer="1"/>
+<smd name="8" x="-4.5625" y="-4.445" dx="1.525" dy="0.51" layer="1"/>
+<smd name="10" x="4.5625" y="-3.175" dx="1.525" dy="0.51" layer="1" rot="R180"/>
+<smd name="11" x="4.5625" y="-1.905" dx="1.525" dy="0.51" layer="1" rot="R180"/>
+<smd name="12" x="4.5625" y="-0.635" dx="1.525" dy="0.51" layer="1" rot="R180"/>
+<smd name="13" x="4.5625" y="0.635" dx="1.525" dy="0.51" layer="1" rot="R180"/>
+<smd name="14" x="4.5625" y="1.905" dx="1.525" dy="0.51" layer="1" rot="R180"/>
+<smd name="15" x="4.5625" y="3.175" dx="1.525" dy="0.51" layer="1" rot="R180"/>
+<smd name="9" x="4.5625" y="-4.445" dx="1.525" dy="0.51" layer="1" rot="R180"/>
+<smd name="16" x="4.5625" y="4.445" dx="1.525" dy="0.51" layer="1" rot="R180"/>
+<circle x="-2.54" y="4.445" radius="0.5" width="0.127" layer="21"/>
+</package>
 </packages>
 <symbols>
 <symbol name="TERM_BLOCK_PLUG_8POS_STR_2.5MM">
@@ -5200,6 +5223,28 @@ Allows current flow in one direction, but allows reverse flow when above breakdo
 <pin name="MN" x="30.48" y="5.08" length="middle" rot="R180"/>
 <pin name="PG11" x="-5.08" y="30.48" length="middle"/>
 </symbol>
+<symbol name="L4978D013TR">
+<pin name="OUT2" x="-12.7" y="-2.54" length="short"/>
+<pin name="OUT1" x="-12.7" y="0" length="short"/>
+<pin name="OSC" x="-12.7" y="2.54" length="short"/>
+<pin name="SS_INH" x="-12.7" y="5.08" length="short"/>
+<pin name="GND" x="-12.7" y="7.62" length="short"/>
+<pin name="N.C.1" x="-12.7" y="10.16" length="short"/>
+<pin name="N.C.2" x="-12.7" y="-5.08" length="short"/>
+<pin name="N.C.3" x="-12.7" y="-7.62" length="short"/>
+<pin name="FB" x="12.7" y="5.08" length="short" rot="R180"/>
+<pin name="COMP" x="12.7" y="2.54" length="short" rot="R180"/>
+<pin name="BOOT" x="12.7" y="0" length="short" rot="R180"/>
+<pin name="VCC" x="12.7" y="-2.54" length="short" rot="R180"/>
+<pin name="N.C.6" x="12.7" y="-5.08" length="short" rot="R180"/>
+<pin name="N.C.7" x="12.7" y="-7.62" length="short" rot="R180"/>
+<pin name="N.C.5" x="12.7" y="7.62" length="short" rot="R180"/>
+<pin name="N.C.4" x="12.7" y="10.16" length="short" rot="R180"/>
+<wire x1="-10.16" y1="12.7" x2="-10.16" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="-10.16" x2="10.16" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="10.16" y1="-10.16" x2="10.16" y2="12.7" width="0.254" layer="94"/>
+<wire x1="10.16" y1="12.7" x2="-10.16" y2="12.7" width="0.254" layer="94"/>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="TERM_BLOCK_PLUG_8POS_STR_2.5MM">
@@ -5270,6 +5315,36 @@ Allows current flow in one direction, but allows reverse flow when above breakdo
 </device>
 </devices>
 </deviceset>
+<deviceset name="L4978D013TR">
+<gates>
+<gate name="G$1" symbol="L4978D013TR" x="0" y="-2.54"/>
+</gates>
+<devices>
+<device name="" package="L4978D013TR">
+<connects>
+<connect gate="G$1" pin="BOOT" pad="12"/>
+<connect gate="G$1" pin="COMP" pad="13"/>
+<connect gate="G$1" pin="FB" pad="14"/>
+<connect gate="G$1" pin="GND" pad="2"/>
+<connect gate="G$1" pin="N.C.1" pad="1"/>
+<connect gate="G$1" pin="N.C.2" pad="7"/>
+<connect gate="G$1" pin="N.C.3" pad="8"/>
+<connect gate="G$1" pin="N.C.4" pad="16"/>
+<connect gate="G$1" pin="N.C.5" pad="15"/>
+<connect gate="G$1" pin="N.C.6" pad="9"/>
+<connect gate="G$1" pin="N.C.7" pad="10"/>
+<connect gate="G$1" pin="OSC" pad="4"/>
+<connect gate="G$1" pin="OUT1" pad="5"/>
+<connect gate="G$1" pin="OUT2" pad="6"/>
+<connect gate="G$1" pin="SS_INH" pad="3"/>
+<connect gate="G$1" pin="VCC" pad="11"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
 </devicesets>
 </library>
 </libraries>
@@ -5325,6 +5400,7 @@ Allows current flow in one direction, but allows reverse flow when above breakdo
 <part name="R11" library="SparkFun-Resistors" library_urn="urn:adsk.eagle:library:532" deviceset="0OHM" device="-0603-1/10W-5%" package3d_urn="urn:adsk.eagle:package:39650/1" value="0"/>
 <part name="GND9" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND14" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
+<part name="U$1" library="Camera_Board_Parts_09_30_2020" deviceset="L4978D013TR" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -5487,6 +5563,7 @@ Allows current flow in one direction, but allows reverse flow when above breakdo
 <instance part="GND14" gate="1" x="-99.06" y="-30.48" smashed="yes">
 <attribute name="VALUE" x="-101.6" y="-33.02" size="1.778" layer="96"/>
 </instance>
+<instance part="U$1" gate="G$1" x="147.32" y="35.56" smashed="yes"/>
 </instances>
 <busses>
 </busses>

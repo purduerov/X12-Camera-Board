@@ -4064,6 +4064,29 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <pad name="5V" x="11.1408" y="1.27" drill="1.016" diameter="1.778"/>
 <pad name="RXD" x="11.1408" y="24.13" drill="1.016" diameter="1.778"/>
 </package>
+<package name="L4978D013TR">
+<wire x1="-3.8" y1="-5.25" x2="3.8" y2="-5.25" width="0.127" layer="21"/>
+<wire x1="-3.8" y1="5.25" x2="3.8" y2="5.25" width="0.127" layer="21"/>
+<wire x1="-3.8" y1="-5.25" x2="-3.8" y2="5.25" width="0.127" layer="21"/>
+<wire x1="3.8" y1="-5.25" x2="3.8" y2="5.25" width="0.127" layer="21"/>
+<smd name="2" x="-4.5625" y="3.175" dx="1.525" dy="0.51" layer="1"/>
+<smd name="3" x="-4.5625" y="1.905" dx="1.525" dy="0.51" layer="1"/>
+<smd name="4" x="-4.5625" y="0.635" dx="1.525" dy="0.51" layer="1"/>
+<smd name="5" x="-4.5625" y="-0.635" dx="1.525" dy="0.51" layer="1"/>
+<smd name="6" x="-4.5625" y="-1.905" dx="1.525" dy="0.51" layer="1"/>
+<smd name="7" x="-4.5625" y="-3.175" dx="1.525" dy="0.51" layer="1"/>
+<smd name="1" x="-4.5625" y="4.445" dx="1.525" dy="0.51" layer="1"/>
+<smd name="8" x="-4.5625" y="-4.445" dx="1.525" dy="0.51" layer="1"/>
+<smd name="10" x="4.5625" y="-3.175" dx="1.525" dy="0.51" layer="1" rot="R180"/>
+<smd name="11" x="4.5625" y="-1.905" dx="1.525" dy="0.51" layer="1" rot="R180"/>
+<smd name="12" x="4.5625" y="-0.635" dx="1.525" dy="0.51" layer="1" rot="R180"/>
+<smd name="13" x="4.5625" y="0.635" dx="1.525" dy="0.51" layer="1" rot="R180"/>
+<smd name="14" x="4.5625" y="1.905" dx="1.525" dy="0.51" layer="1" rot="R180"/>
+<smd name="15" x="4.5625" y="3.175" dx="1.525" dy="0.51" layer="1" rot="R180"/>
+<smd name="9" x="4.5625" y="-4.445" dx="1.525" dy="0.51" layer="1" rot="R180"/>
+<smd name="16" x="4.5625" y="4.445" dx="1.525" dy="0.51" layer="1" rot="R180"/>
+<circle x="-2.54" y="4.445" radius="0.5" width="0.127" layer="21"/>
+</package>
 </packages>
 </library>
 </libraries>
@@ -4366,6 +4389,7 @@ Please make sure your boards conform to these design rules.
 <attribute name="PROD_ID" value="RES-08609" x="4.699" y="13.843" size="1.778" layer="28" rot="MR180" display="off"/>
 <attribute name="VALUE" x="4.572" y="14.605" size="0.6096" layer="28" font="vector" ratio="20" rot="MR180" align="top-center"/>
 </element>
+<element name="U$1" library="Camera_Board_Parts_09_30_2020" package="L4978D013TR" value="L4978D013TR" x="75.057" y="15.494" smashed="yes"/>
 </elements>
 <signals>
 <signal name="VDD">
